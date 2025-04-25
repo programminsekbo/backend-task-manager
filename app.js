@@ -26,7 +26,9 @@ app.use(limiter)
 // Cache
 app.set('etag',WEB_CACHE)
 
-
+app.get('/', (req, res) => {
+    res.send('task manager App Sever is runinng...!')
+})
 
 
 // Database Connect
